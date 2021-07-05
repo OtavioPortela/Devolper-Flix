@@ -1,0 +1,127 @@
+:root{
+    --vermelho:#e13728;
+    --preta:#141414;
+
+}
+
+*{                                         /*padronizando os elementos de tela*/
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*elementos base*/
+
+body {
+    background: var(--preta);
+    font-family:Georgia, 'Times New Roman', Times, serif; /*google fonts*/
+    color: cornsilk;
+    
+
+    
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-family: 'Tourney', cursive;
+    font-size: 40px;
+    margin-left: 8px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 10px;
+}
+
+header nav a:hover{
+    color: #fff;
+}
+
+/*filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('/img/cursos/capas/Design\ sem\ nome.jpg');
+    
+    height: 650px;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titulo{
+    font-family: 'Staatliches', cursive;
+    font-size: 45px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+}
+
+.filme-principal .descricao{
+    margin-bottom: 60px;
+    margin-left: 15px;
+}
+
+/*utilizar font aweson*/
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+    padding: 15px;
+    margin-right: 25px;
+    font-size: 12px;
+    margin-left: 15px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
+}
+
+/* usar jakere owl carousel e um flamework para ciação de um carrosel*/
+
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+/*midiaguery*/
+
+.carrosel-filmes{
+    margin-top: 10px;
+}
+
+
+
+.item:hover{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+.catalogo {
+    padding: 15px 15px 15px 15px;
+    align-items: center;
+
+}
